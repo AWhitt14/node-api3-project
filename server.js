@@ -11,7 +11,7 @@ server.use('/users',userRouter)
 
 
 server.get('/', (req, res) => {
-  res.send(`<h2>Let's write some middleware!</h2>`);
+  res.send(`<h2>${process.env.WELCOME}</h2>`);
 });
 
 //custom middleware
